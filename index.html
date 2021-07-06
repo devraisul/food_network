@@ -11,11 +11,11 @@
 </head>
 <body>
     <nav>
-        <h1>Food Network</h1>
+        <h1>Food <span>Network</span></h1>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about_me">About Me</a></li>
-            <li><a href="#my-services">My recipies</a></li>
+            <li><a href="#my-services">My Recipies</a></li>
             <li><a href="#cont">Contact US</a></li>
           </ul>
     </nav>
@@ -111,8 +111,11 @@
            <div class="contact-form">
                <h2>CONTACT US</h2>
                <form class="contact" action="index.html">
-                   <input type="text" name="name" class="text-box" placeholder="Your Name" required>
-                   <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                   <div class="row">
+                        <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                        <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                   </div>
+                   
                    <textarea name="massage" id=""  rows="5" placeholder="Your Massage" required></textarea>
                    <input type="submit" name="submit" class="sand-btn" value="sand" placeholder="Your Name" required>
                </form>
