@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:regular@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+nav h1{
+    color: #ff843c;
+    align-items: center;
+    width: 50%;
+    font-size: 40px;
+    margin: 30px 0 30px 0;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+
+}
+nav ul li{
+ list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 30px;
+    margin-right: 1rem;
+    background-image: linear-gradient(to right, #e66848 0%, #e46b20 51%, #f39945 100%);
+}
+section.hero-section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+.hero-section .hero-dis{
+    width: 50%;
+    padding: 100px;
+    margin-top: 100px;
+}
+.hero-section .hero-dis h1{
+    font-size: 50px;
+    color: #75787a;
+    margin-top: 1rem;
+    font-weight: 750;
+}
+.h-margin{
+    margin-bottom: 50px;
+}
+
+
+
+.hero-section .hero-dis h1 span{
+    color: #ff843c;
+    
+}
+.hero-section .hero-dis p{
+    font-size: 1.3rem;
+    opacity: .8;
+    margin-bottom: 50px;
+}
+.hero-section .hero-dis a{
+    padding: 1rem 2.2rem;
+    text-decoration: none;
+    border-radius: 3rem;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #e66848 0%, #e46b20 51%, #f39945 100%);
+}
+.hero-section .hero-img{
+    width: 50%;
+    margin-top: 50px;
+}
+.hero-section .hero-img img{
+    height: 600px;
+    width: auto;
+}
+
+
+.about-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/shapes/7.png);
+    background-repeat: no-repeat;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.about-section .about-img{
+    width: 50%;
+}
+.about-section .about-img img{
+    height: 500px;
+    width: auto;
+    margin: 100px 100px 0 150px;
+    
+}
+.about-section .about-dis{
+    width: 50%;
+
+}
+.about-section .about-dis h1{
+    font-size: 40px;
+    margin-top: 100px;
+}
+.about-section .about-dis p{
+    margin-top: 40px 0;!important
+}
+.about-p{
+    margin: 40px 0 70px 0;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+.my-services{
+    height: 100vh;
+
+}
+.my-services h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #535353;
+}
+.my-services .p{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    color: #353434;
+
+}
+.my-services .container{
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0;
+}
+.my-services .container .service-card{
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+    padding: 15px;
+    -webkit-box-shadow:0px 0px 20px 3px rgba(35,41,41,1);
+    -moz-box-shadow: 0px 0px 20px 3px rgba(35,41,41,1);
+    box-shadow: 0px 0px 20px 3px rgba(35,41,41,1);
+    
+}
+.my-services .container .service-card img{
+    height: 200px;
+    width: 270px;
+    align-items: center;
+    border-radius: 20px;
+}
+.my-services .container .service-card h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-align: center;
+    
+}
+.my-services .container .service-card p{
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+.about-section .about-dis a{
+    padding: 1rem 2.2rem;
+    text-decoration: none;
+    border-radius: 3rem;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #e66848 0%, #e46b20 51%, #f39945 100%);
+}
+
+
+
+section.social-media{
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 180px;
+    display: flex;
+    margin: 150px 100px 100px 100px;
+    border-radius: 30px;
+    -webkit-box-shadow:0px 0px 20px 3px rgb(139, 153, 153);
+    -moz-box-shadow: 0px 0px 20px 3px rgb(119, 129, 129);
+    box-shadow: 0px 0px 20px 3px rgb(114, 119, 119);
+}
+.h1{
+    font-size: 50px;
+}
+.p{
+    font-size: 1.3rem;
+}
+
+
+
+.cont{
+    height: 100vh;
+    background: url(../images/food/Project\ Cover8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info{
+    color: white;
+    width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+.contact-info, .contact-form{
+    flex: 1;
+}
+.contact-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .text-box:first-child{
+    margin-right:15px ;
+}
+.contact-form textarea{
+    background: #000;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .sand-btn{
+float: right;
+background: #2e94e3;
+color: white;
+border: none;
+width: 120px;
+height: 40px;
+font-size: 15px;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 2px;
+border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    height: 200px;
+    background: #373738;
+    padding: 50px;
+}
+footer h1{
+    margin-bottom: 40px;
+    color: white;
+}
+footer h1 span{
+    color: #fa4e30;
+    
+}
+footer p{
+    color: white;
+    letter-spacing: .9px;
+}
