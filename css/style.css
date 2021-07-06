@@ -10,34 +10,41 @@ html{
 
 }
 nav{
+    z-index: 1000;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
     display: flex;
-    height: 100px;
+    height: 70px;
+    align-items: center;
     justify-content: center;
+    box-shadow: 0 3px 10px #bebfbf;
 }
 nav h1{
     color: #ff843c;
     align-items: center;
     width: 50%;
-    font-size: 40px;
-    margin: 30px 0 30px 0;
-
+    font-size: 25px;
+}
+nav h1 span{
+    color: #000;
 }
 nav ul{
     display: flex;
     align-items: center;
-
 }
 nav ul li{
  list-style-type: none;
 }
 nav ul li a{
     text-decoration: none;
-    padding: 1rem 2rem;
-    color: white;
-    font-weight: 700;
-    border-radius: 30px;
-    margin-right: 1rem;
-    background-image: linear-gradient(to right, #e66848 0%, #e46b20 51%, #f39945 100%);
+    color: #000;
+    font-weight: 500;
+    margin-left: 5rem;
+    transition: .3s;
+}
+nav ul li a:hover{
+    color: #ff843c;
 }
 section.hero-section{
     display: flex;
@@ -53,13 +60,11 @@ section.hero-section{
 .hero-section .hero-dis h1{
     font-size: 50px;
     color: #75787a;
-    margin-top: 1rem;
     font-weight: 750;
 }
 .h-margin{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
-
 
 
 .hero-section .hero-dis h1 span{
@@ -81,13 +86,18 @@ section.hero-section{
     color: white;
     cursor: pointer;
     background-image: linear-gradient(to right, #e66848 0%, #e46b20 51%, #f39945 100%);
+    transition: .3s;
+}
+.hero-section .hero-dis a:hover{
+    box-shadow: 0 0 10px #e66848;
 }
 .hero-section .hero-img{
     width: 50%;
     margin-top: 50px;
 }
 .hero-section .hero-img img{
-    height: 600px;
+    margin-top: 50px;
+    height: 550px;
     width: auto;
 }
 
@@ -118,6 +128,7 @@ section.hero-section{
     font-size: 40px;
     margin-top: 100px;
 }
+
 .about-section .about-dis p{
     margin-top: 40px 0;!important
 }
@@ -145,6 +156,21 @@ section.hero-section{
     color: #353434;
 
 }
+.about-section .about-dis a{
+    transition: .3s;
+    padding: 1rem 2.2rem;
+    text-decoration: none;
+    border-radius: 3rem;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #e66848 0%, #e46b20 51%, #f39945 100%);
+}
+.about-section .about-dis a:hover{
+    box-shadow: 0 0 10px #e66848;
+}
 .my-services .container{
     height: 550px;
     display: flex;
@@ -156,10 +182,7 @@ section.hero-section{
     width: 300px;
     border-radius: 25px;
     padding: 15px;
-    -webkit-box-shadow:0px 0px 20px 3px rgba(35,41,41,1);
-    -moz-box-shadow: 0px 0px 20px 3px rgba(35,41,41,1);
-    box-shadow: 0px 0px 20px 3px rgba(35,41,41,1);
-    
+    box-shadow: 0 5px 10px #bebfbf;
 }
 .my-services .container .service-card img{
     height: 200px;
@@ -182,17 +205,7 @@ section.hero-section{
 
 
 
-.about-section .about-dis a{
-    padding: 1rem 2.2rem;
-    text-decoration: none;
-    border-radius: 3rem;
-    font-weight: 700;
-    font-size: 16px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-image: linear-gradient(to right, #e66848 0%, #e46b20 51%, #f39945 100%);
-}
+
 
 
 
@@ -204,9 +217,7 @@ section.social-media{
     display: flex;
     margin: 150px 100px 100px 100px;
     border-radius: 30px;
-    -webkit-box-shadow:0px 0px 20px 3px rgb(139, 153, 153);
-    -moz-box-shadow: 0px 0px 20px 3px rgb(119, 129, 129);
-    box-shadow: 0px 0px 20px 3px rgb(114, 119, 119);
+    box-shadow: 0 5px 10px #bebfbf;
 }
 .h1{
     font-size: 50px;
@@ -219,9 +230,7 @@ section.social-media{
 
 .cont{
     height: 100vh;
-    background: url(../images/food/Project\ Cover8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #e66848;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,11 +243,16 @@ section.social-media{
     align-items: center;
 }
 .contact-info{
-    color: white;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0px 50px;
+    padding: 30px 20px;
+    color: #e66848;
     width: 500px;
     line-height: 65px;
     padding-left: 50px;
     font-size: 18px;
+    box-shadow: 0 2px 10px #7b7b7b;
 }
 .contact-info i{
     margin-right: 20px;
@@ -257,26 +271,30 @@ section.social-media{
     font-size: 35px;
     margin-bottom: 30px;
 }
-.contact-form .text-box{
-    background: #000;
-    color: #fff;
+.contact-form .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-form .row input{
+    background: #fff;
+    color: #000;
     border: none;
-    width: calc(50% - 10px);
+    width: 100%;
     height: 50px;
     padding: 12px;
     font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
     margin-bottom: 20px;
-    opacity: 0.9;
+    box-shadow: 0 2px 10px #7b7b7b;
 }
 
 .contact-form .text-box:first-child{
     margin-right:15px ;
 }
 .contact-form textarea{
-    background: #000;
-    color: white;
+    background: #fff;
+    color: #000;
     border: none;
     width: 100%;
     padding: 12px;
@@ -284,23 +302,26 @@ section.social-media{
     border-radius: 5px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    opacity: 0.9;
+    box-shadow: 0 2px 10px #7b7b7b;
 }
 
 .contact-form .sand-btn{
-float: right;
-background: #2e94e3;
-color: white;
-border: none;
-width: 120px;
-height: 40px;
-font-size: 15px;
-font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 2px;
-border-radius: 5px;
-}
+    float: right;
+    background: #FFF;
+    color: #e66848;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    padding: 15px 50px;
+    transition: .3s;
 
+}
+.contact-form .sand-btn:hover{
+    box-shadow: 0 0 10px #FFF;
+}
 
 
 
